@@ -1,22 +1,18 @@
 package com.loiane.cursojava.aula34;
 
 public class TesteCalculadora {
-	
-	static int resultSoma;
 
-	public static void main(String[] args) {
-		
-		resultSoma = MinhaCalculadora.soma(1, 2);
-		
-		//MinhaCalculadora calc = new MinhaCalculadora();
-		
-		//calc.soma(1, 2);
-		
-		soma2Valores(1, 2);
-		
-	}
+    public static void main(String[] args) {
 
-	static int soma2Valores(int num1, int num2){
-		return MinhaCalculadora.soma(num1, num2);
-	}
+        int resultado = MinhaCalculadora.soma(1, 2);
+        System.out.println("Soma 2 valores: " + resultado);
+
+        int resultado3 = MinhaCalculadora.soma(1, 2, 3);
+        System.out.println("Soma 3 valores: " + resultado3);
+
+        int[] numeros = {1, 2, 3, 4};
+        int resultadoVetor = MinhaCalculadora.soma(numeros);
+        System.out.println("Soma vetor: " + resultadoVetor);
+    }
 }
+
